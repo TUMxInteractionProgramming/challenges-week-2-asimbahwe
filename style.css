@@ -1,0 +1,149 @@
+
+@charset utf-8;
+
+/*
+            1. GLOBAL
+            2. APP-BAR
+            3. CHANNELS LIST
+            4. TAB BAR
+            5. MESSAGES
+
+
+
+
+
+
+            */
+        /* #2 #colorful #palette is:
+          * Background: #F5F5F5 (GREY 100)
+          * Primary Text: black
+
+          * Primary color: #3F51B5 (INDIGO)
+          * Primary color_text : white
+          * Accent color: #CDDC39 (LIME)
+          * Accent color_text: black
+          */
+
+        /*global styles */
+        * {
+            /* #2 #font #faces */
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            /* #2 #colorful #background */
+            background-color: #F5F5F5;
+            margin: 0px;
+        }
+
+        h1 {
+            /* #2 #colourful #app-bar */
+            background-color: #3F51B5;
+            color: white;
+        }
+
+        button {
+            /* #2 #colourful #plusfive */
+            background-color: #CDDC39;
+            color: black;
+            /* #2 #font capital #letters */
+            text-transform: uppercase;
+        }
+
+
+        /*styles for channel area*/
+        h2 {
+            /* #2 #colorful #channelandchat */
+            background-color: white;
+        }
+
+        /*styles for chat area*/
+        p {
+            /* #2 #colorful #channelandchat */
+            background-color: white;
+        }
+
+        strong {
+            /* #2 #font #locations need an extra element, we'll use strong for w3w locations */
+            text-transform: uppercase;
+        }
+
+        h3 {
+            /* #2 #font #metadata is now medium */
+            font-size: medium;
+        }
+
+        em {
+            /* #2 #font #remaining overrides the default italic appearance of em elements*/
+            font-size: larger;
+            font-style: normal;
+        }
+
+        /* CHANNELS LIST STYLES */
+
+        #nav-bar
+        {
+            background-color: white;
+            margin: 0px;
+        }
+
+        #nav-bar h2
+        {
+            border-bottom:1px solid #eee; 
+            padding: 5px;
+        }
+        #channels-list
+        {
+            padding: 5px;
+        }
+
+       #channels-list .active
+        {
+            border-left: 3px solid blue;
+            color: blue;
+        }
+        #nav-bar button
+        {
+            display: inline-block;
+
+        }
+        /* TAB BAR */
+        #tab-bar 
+        {
+            text-align: center;
+        }
+            #tab-bar button span
+            {
+                text-align: center;
+                display: block;
+
+            }
+            #tab-bar button
+            {
+                display: inline-block;
+                width: 30%;
+                background: white;
+            }
+            #tab-bar .active
+            {
+                border-bottom: 3px solid blue;
+                color: blue;
+            }
+        /*CONTENT */
+        .message
+        {
+            margin: 8px;
+            display: block;
+            width: 80%;
+            clear: both;
+            float: left;
+
+        }
+        .message p
+        {
+            padding: 16px;
+        }
+        .mine
+        {
+            float: right;
+        }
